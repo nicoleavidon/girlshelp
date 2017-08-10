@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Girls Help</title>
+    <title>Login | Girls Help</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -11,7 +11,7 @@
 
     <div class="topnav" id="myTopnav">
     <a href="girlshelp.html">Home</a>
-    <a href="base.html">Feed</a>
+    <a href="#news">Feed</a>
     <a href="#contact">Groups</a>
 
     <div class="dropdown">
@@ -28,15 +28,26 @@
     </div>
   </head>
 
-  <body>
-    <div>
-      <img id="titlepic" src="titlepic.jpeg" alt="Girls Help Title" width="700" height="300">
-      <div class="parallax"></div>
-      <div class="content">
-        <h1>About Us</h1>
-        <p id="abouttext"> We are a girls chat platform built by girls, for girls.  We are targeting girls aged 13-18 to ask questions to other girls about a wide variety of topics.  Our mission is to provide an outlet for young girls to communicate with other young girls about anything they have questions.
-</p>
-      </div>
-    </div>
-  </body>
-</html>
+<body>
+  <form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="titlepic.jpeg" alt="Title" class="avatar" height="100" width="100">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</body>
